@@ -8,7 +8,8 @@ export default class MovieShowcase extends Component {
     // map over your movieData array and return the correct
     return (
       movieData.map((movie, id) =>
-        <MovieCard key={id} title={movie.title} IMDBRating={movie.IMDBRating} genres={movie.genres} poster={movie.poster}/>
+        // <MovieCard key={id} title={movie.title} IMDBRating={movie.IMDBRating} genres={movie.genres} poster={movie.poster}/>
+        <MovieCard key={id} {...movie}/>
       )
     );
   };
